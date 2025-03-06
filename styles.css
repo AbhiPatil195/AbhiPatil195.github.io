@@ -2,6 +2,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-top: 56px;
+    color: #333;
 }
 
 section {
@@ -11,12 +12,17 @@ section {
 /* Header Styles */
 header {
     padding: 100px 0;
-    background: linear-gradient(135deg, #0062cc, #0097a7);
+    background: linear-gradient(135deg, #1e5799, #3ccdbb);
+    color: white;
 }
 
 /* Card Hover Effect */
 .card {
     transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
 .card:hover {
@@ -26,32 +32,99 @@ header {
 
 /* Skill Cards */
 .card-title {
-    border-bottom: 2px solid #0062cc;
+    border-bottom: 2px solid #1e5799;
     padding-bottom: 10px;
     margin-bottom: 15px;
+    color: #1e5799;
 }
 
 /* Custom Colors */
 .bg-primary {
-    background-color: #0062cc !important;
+    background-color: #1e5799 !important;
 }
 
 .btn-primary {
-    background-color: #0062cc;
-    border-color: #0062cc;
+    background-color: #1e5799;
+    border-color: #1e5799;
+    border-radius: 6px;
 }
 
 .btn-primary:hover {
-    background-color: #004c9e;
-    border-color: #004c9e;
+    background-color: #164279;
+    border-color: #164279;
+}
+
+.btn-outline-primary {
+    color: #1e5799;
+    border-color: #1e5799;
+    border-radius: 6px;
+}
+
+.btn-outline-primary:hover {
+    background-color: #1e5799;
+    color: white;
 }
 
 /* Project Section */
 #projects .card {
     margin-bottom: 30px;
+    background-color: #f9f9f9;
 }
 
-/* Contact Links */
-.contact-links a {
-    margin: 0 10px;
+#projects .card-title {
+    color: #1e5799;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f9f9f9;
+}
+
+.contact-info a {
+    color: #1e5799;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #1e5799;
+    color: white;
+}
+
+/* Section Backgrounds */
+.bg-light {
+    background-color: #f5f9ff !important;
+}
+
+/* Contact info styling */
+.contact-info {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.contact-info i {
+    width: 25px;
+    color: #1e5799;
+}
+
+/* Navbar customization */
+.navbar-dark {
+    background-color: #1e5799 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,0.8);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+/* Button hover transitions */
+.btn {
+    transition: all 0.3s ease;
 }
