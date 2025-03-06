@@ -1,0 +1,57 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 56px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+/* Header Styles */
+header {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #0062cc, #0097a7);
+}
+
+/* Card Hover Effect */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Skill Cards */
+.card-title {
+    border-bottom: 2px solid #0062cc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Custom Colors */
+.bg-primary {
+    background-color: #0062cc !important;
+}
+
+.btn-primary {
+    background-color: #0062cc;
+    border-color: #0062cc;
+}
+
+.btn-primary:hover {
+    background-color: #004c9e;
+    border-color: #004c9e;
+}
+
+/* Project Section */
+#projects .card {
+    margin-bottom: 30px;
+}
+
+/* Contact Links */
+.contact-links a {
+    margin: 0 10px;
+}
