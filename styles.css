@@ -476,3 +476,121 @@ nav ul li a:hover::after {
     font-size: 1.8rem;
     font-weight: 600;
 }
+
+/* Sentiment Analysis Visualization */
+.sentiment-viz {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.sentiment-chart {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 15px;
+    height: 200px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.chart-bar {
+    width: 60px;
+    border-radius: 6px 6px 0 0;
+    position: relative;
+    transition: height 0.8s ease;
+}
+
+.chart-bar.positive {
+    background: linear-gradient(to bottom, #10b981, #34d399);
+    box-shadow: 0 4px 6px rgba(16, 185, 129, 0.2);
+}
+
+.chart-bar.neutral {
+    background: linear-gradient(to bottom, #3b82f6, #60a5fa);
+    box-shadow: 0 4px 6px rgba(59, 130, 246, 0.2);
+}
+
+.chart-bar.negative {
+    background: linear-gradient(to bottom, #ef4444, #f87171);
+    box-shadow: 0 4px 6px rgba(239, 68, 68, 0.2);
+}
+
+.chart-bar .percentage {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.chart-labels {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.chart-labels span {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.word-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    min-height: 120px;
+}
+
+.word-cloud span {
+    display: inline-block;
+    margin: 5px;
+    padding: 2px 8px;
+    border-radius: 15px;
+    font-weight: 500;
+}
+
+.word-pos {
+    color: #059669;
+    background-color: rgba(16, 185, 129, 0.1);
+}
+
+.word-neu {
+    color: #2563eb;
+    background-color: rgba(59, 130, 246, 0.1);
+}
+
+.word-neg {
+    color: #dc2626;
+    background-color: rgba(239, 68, 68, 0.1);
+}
+
+.size-xl {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.size-l {
+    font-size: 1.15rem;
+}
+
+.size-m {
+    font-size: 1rem;
+}
+
+.size-s {
+    font-size: 0.9rem;
+}
